@@ -11,9 +11,11 @@ test('Login', async ({page})=>{
    await page.keyboard.press('Enter');
     const link =page.locator('a')
     console.log(await page.locator('a').nth(1).getAttribute('href'));
-
-    
-
-   
-
 });
+
+import {test,expect} from '@playwright/test'
+test ('Login', async ({page})=>{
+
+    await page.goto('')
+    await page.locator()
+})
