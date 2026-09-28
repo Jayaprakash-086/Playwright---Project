@@ -17,8 +17,8 @@ jobs:
       run: npm install
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright e2e
-      run: npx playwright demourl.spec.js
+    - name: Run Playwright tests
+      run: npx playwright e2e/demo1/demourl.spec.js
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
