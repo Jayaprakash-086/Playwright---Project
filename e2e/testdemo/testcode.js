@@ -15,5 +15,18 @@ export class url{
         await this.url.locator('//input[@id="phone"]').fill('8667261246')
     }
 
-    async
+    async address(){
+        await this.url.locator('//textarea[@id="textarea"]').fill('Chennai')
+    }
+
+    async gender(){
+        await this.url.locator('//input[@id="male"]').check()
+
+    }
+
+    async checkbox(){
+        await this.url.locator('//input[@id="sunday"]').check();
+        await this.url.locator('//input[@id="friday"]').check();
+    }
+
 }

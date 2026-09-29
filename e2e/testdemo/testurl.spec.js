@@ -8,6 +8,16 @@ test ('testautomation', async({page})=>{
 
     await now.name();
 
+    await now.email();
+
+    await now.phone();
+
+    await now.address();
+
+    await now.gender();
+
+    await now.checkbox();
+
     
 
 })
