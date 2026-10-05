@@ -18,6 +18,12 @@ test ('testautomation', async({page})=>{
 
     await now.checkbox();
 
+    await now.country();
+
+    await now.colour();
+
+    await now.sortlist();
+
     
 
 })

@@ -29,4 +29,20 @@ export class url{
         await this.url.locator('//input[@id="friday"]').check();
     }
 
+    async country(){
+        const drop = await this.url.locator('#country')
+        drop.selectOption({value:'brazil'})
+    }
+
+    async colour(){
+        const color = await this.url.locator('#colors')
+        color.selectOption({label:'White'})
+    }
+
+    async sortlist(){
+        const sort = await this.url.locator('#animals')
+        sort.selectOption({label:'Lion'})
+    }
+
+
 }
