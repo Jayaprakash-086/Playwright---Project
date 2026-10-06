@@ -24,6 +24,11 @@ test ('testautomation', async({page})=>{
 
     await now.sortlist();
 
-    
+    await now.datepicker1();
 
+    await now.datepicker2();
+
+    await now.uploaded();
+
+    await page.pause()
 })
